@@ -6,7 +6,7 @@ RUN apk add --no-cache bash git go gcc musl-dev curl; \
     bash build.sh release docker
 
 FROM alpine:edge
-LABEL MAINTAINER="i@nn.ci"
+LABEL MAINTAINER="gpsjuw@126.com"
 VOLUME /opt/alist/data/
 WORKDIR /opt/alist/
 COPY --from=builder /app/bin/alist ./
